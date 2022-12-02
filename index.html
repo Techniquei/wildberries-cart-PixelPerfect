@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
+
 <body>
     <header class="header">
         <div class="header__container">
@@ -23,8 +25,8 @@
                 </div>
             </div>
             <div class="header__search">
-                <input class="header__search-input" type="text" placeholder="Я ищу..."/>
-                <button class="header__search-button"/>
+                <input class="header__search-input" type="text" placeholder="Я ищу..." />
+                <button class="header__search-button" />
             </div>
             <div class="header__menu">
                 <div class="header__menu-item">
@@ -40,8 +42,86 @@
     </header>
     <main>
         <div class="main-container">
-            vewvw
+            <div class="main__left">
+                Корзина и т д
+            </div>
+            <div class="main__right">
+                <div class="total__card">
+                    <div class="total__card-content">
+                        <div class="total__card-content-item">
+                            <div class="total__card-content-item-row">
+                                <div>Итого</div>
+                                <div>2 101 063 сом</div>
+                            </div>
+                            <div class="total__card-content-item-row">
+                                <div>4 товара</div>
+                                <div>2 302 048 сом</div>
+                            </div>
+                            <div class="total__card-content-item-row">
+                                <div>Скидка</div>
+                                <div>-200 985 сом</div>
+                            </div>
+                            <div class="total__card-content-item-row">
+                                <div>Доставка</div>
+                                <div>Бесплатно</div>
+                            </div>
+                        </div>
+
+                        <div id="delivery" class="total__card-content-item">
+                            <div class="pick-point">
+                                <div class="pick-point-change">
+                                    <h3>Доставка в пункт выдачи</h3>
+                                    <img src="./img/pencil.svg" alt="">
+                                </div>
+                                <p>Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
+                                <p id="pick-point-date">5–8 фев</p>
+                            </div>
+                            <div class="total__card_gray-field">
+                                <div class="delivery-icon-accept">
+                                    <img class="icon-jackdaw" src="./img/jackdaw green.svg" alt="">
+                                    <img class="icon-circle" src="./img/circle.svg" alt="">
+
+                                </div>
+                                <div class="total__card_gray-field-text">
+                                    Обратная доставка товаров на склад при отказе — <span>бесплатно</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="pay" class="total__card-content-item">
+                            <div class="pick-point">
+                                <div class="pick-point-change">
+                                    <h3>Оплата картой</h3>
+                                    <img src="./img/pencil.svg" alt="">
+                                </div>
+                                <div id="bank-card">
+                                    <img src="./img/MIR.svg" alt="">
+                                    <span>1234 12•• •••• 1234</span>
+                                </div>
+                            </div>
+                            <div id="pay-gray-field" class="total__card_gray-field">
+
+                                <div class="checkbox-wrapper">
+                                    <input class="custom-checkbox" type="checkbox" id="pay-now" name="pay-now">
+                                    <label for="pay-now">Списать оплату сразу</label>
+                                </div>
+                                <p>Спишем оплату с карты при получении</p>
+
+                                
+
+
+                            </div>
+                        </div>
+                        <button class="order-button"></button>
+                    </div>
+                    <div class="total__card-button">
+
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 </body>
+
 </html>

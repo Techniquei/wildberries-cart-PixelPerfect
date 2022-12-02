@@ -6,6 +6,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     position: relative;
+    color: #000000;
 }
 
 h1,
@@ -204,7 +205,7 @@ p {
     margin-top: 6px;
 }
 
-main{
+main {
     display: flex;
     justify-content: center;
     border-radius: 24px;
@@ -215,11 +216,251 @@ main{
     width: 100%;
 }
 
-.main-container{
+.main-container {
     width: 1400px;
     padding: 16px 24px;
     display: flex;
     gap: 32px;
 
-    
+}
+
+.main__left {
+    width: 891px;
+    height: 1809px;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    border: 1px solid gray;
+}
+
+.main__right {
+    width: 429px;
+    height: 1809px;
+
+
+}
+
+.total__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 24px 24px;
+    gap: 24px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15), 0px 0px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    background: #FFFFFF;
+    width: 429px;
+    height: 572px;
+}
+
+.total__card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    width: 381px;
+    height: 420px;
+}
+
+.total__card-content-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    width: 381px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.total__card-content-item-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0;
+}
+
+.total__card-content-item-row:first-child {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.01em;
+    margin-bottom: 8px;
+}
+
+#delivery {
+    gap: 12px;
+}
+
+.pick-point {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+    width: 100%;
+}
+
+.pick-point-change {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    width: 100%;
+}
+
+.pick-point-change h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.pick-point-change img {
+    width: 16px;
+    height: 16px;
+}
+
+.pick-point h5 {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+#pick-point-date {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #CB11AB;
+    border-bottom: 1px dashed rgba(203, 17, 171, 0.2);
+    padding-bottom: 1px;
+
+}
+
+.total__card_gray-field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 8px 12px;
+    gap: 9px;
+    background: #F6F6FA;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.delivery-icon-accept {
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+
+.icon-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.icon-jackdaw {
+    position: absolute;
+    top: 6px;
+    left: 5px;
+}
+
+.total__card_gray-field-text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.total__card_gray-field-text span {
+    color: #0CB477;
+    border-bottom: 1px dashed rgba(12, 180, 119, 0.2);
+}
+
+#pay {
+    gap: 12px;
+}
+
+#bank-card {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: left;
+    align-items: center;
+}
+
+#bank-card span {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+
+
+.checkbox-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.checkbox-wrapper label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.custom-checkbox:checked+label::before {
+    border-color: #CB11AB;
+    background-color: #CB11AB;
+    background-image: url(./img/checked\ white\ stroke.svg);
+    background-size: 70%;
+    background-position: 60% 40%;
+}
+
+#pay-gray-field {
+    flex-direction: column;
+    align-items: start;
+}
+
+#pay-gray-field p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
 }
