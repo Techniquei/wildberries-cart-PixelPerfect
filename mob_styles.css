@@ -1,0 +1,43 @@
+@media screen and (max-width: 1024px) {
+
+    .main-container {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    
+    }
+
+    .main-container__inner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        
+        
+    }
+
+    .main__left {
+        width: 100%;
+        height: auto;
+    }
+
+    
+
+    .main__right {
+        width: 100%;
+        height: auto;
+        margin-top: -16px;
+        padding-top: 16px;
+    }
+    
+    .cart__inner-frame{
+        padding: 0 16px;
+    }
+
+    .total__card{
+        background-color: inherit;
+        border-radius: 0;
+        box-shadow:none;
+    }
+}
+
