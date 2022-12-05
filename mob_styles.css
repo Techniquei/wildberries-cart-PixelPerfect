@@ -272,7 +272,7 @@
     }
 
     .main__left__white-wrapper{
-        padding: 19px 16px 22px 16px;
+        padding: 16px 16px 22px 16px;
     }
 
     .main__left__white-wrapper-title {
@@ -282,20 +282,78 @@
 
     .main__left__white-wrapper-title h2 {
         margin: 0;
-        height: 28px;
         font-size: 20px;
-        line-height: 28px;
+        line-height: 32px;
+    }
+
+    .main__left__white-wrapper-title a{
+        line-height: 32px;
+    }
+
+    .delivery-params {
+        grid-template-columns: 100%;
+        gap: 0;
+    }
+    
+    .delivery-params .grid_left {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .delivery-params .grid_right {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 16px;
+    }
+
+    .small-images-flex{
+        margin: 12px 0px 0px 0px;
+    }
+
+    .main__left__white-wrapper__free-cancel{
+        margin-top: 8px;
+    }
+
+    .recipient-form{
+        max-width: 100%;
+        row-gap: 25px;
+    }
+    
+    .recipient-form-input-wrapper{
+        width: 100%;
+    }
+
+    #recipient_name-wrapper{
+        width: 100%;
+    }
+
+    #recipient_last-name-wrapper{
+        width: 100%;
     }
 
 
+    .total__card-content{
+        gap: 16px
+    }
 
+    .total__card-content-item-row{
+        font-size: 16px;
+    }
 
+    .total__card-content-item-row div{
+        font-size: 20px;
+    }
 
+    .pick-point{
+        display: none;
+    }
 
-
-
-
-
+    .total__card_gray-field{
+        background-color: #F0ECF4;
+        border-radius: 8px;
+    }
 
 
 
