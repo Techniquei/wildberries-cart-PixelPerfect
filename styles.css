@@ -88,11 +88,17 @@ p {
     align-items: center;
 }
 
+.mobile-menu-icon-frame{
+    display: none;
+    cursor: pointer;
+}
+
 .header__catalog {
     width: 28px;
     height: 24px;
 
     color: #ffffff;
+    cursor: pointer;
 }
 
 .header__logo {
@@ -100,6 +106,7 @@ p {
     height: 56px;
     padding: 0;
     position: relative;
+    cursor: pointer;
 }
 
 .header__logo-text {
@@ -155,6 +162,7 @@ p {
     background: url("./img/search.svg");
     color: #ffffff;
     opacity: 0.5;
+    cursor: pointer;
 }
 
 .header__menu {
@@ -411,7 +419,6 @@ main {
     flex-direction: row;
     align-items: center;
     gap: 8px;
-
 }
 
 .checkbox-wrapper label {
@@ -432,7 +439,8 @@ main {
 .custom-checkbox+label {
     display: inline-flex;
     align-items: center;
-    user-select: none
+    user-select: none;
+    
 }
 
 .custom-checkbox+label::before {
@@ -448,6 +456,7 @@ main {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 50% 50%;
+    cursor: pointer;
 }
 
 .custom-checkbox:checked+label::before {
@@ -598,14 +607,14 @@ main {
 }
 
 .custom-checkbox-product+label::before {
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
     margin-right: 11px;
 }
 
 #product-stock-1-checkbox+label::before {
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
     margin-right: 12px;
 }
 
@@ -616,7 +625,9 @@ main {
     margin-right: 16px;
 }
 
-
+.size-for-mobile{
+    display: none;
+}
 
 .product-in-card-wrapper-left-right {
     display: flex;
@@ -756,6 +767,7 @@ main {
     gap: 19.44px;
     justify-content: end;
     margin-top: 10px;
+    height: 16px;
 }
 
 svg {
