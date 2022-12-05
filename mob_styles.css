@@ -342,7 +342,7 @@
         font-size: 16px;
     }
 
-    .total__card-content-item-row div{
+    .total__card-content-item-row:first-child{
         font-size: 20px;
     }
 

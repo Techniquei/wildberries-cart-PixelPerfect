@@ -361,7 +361,6 @@ main {
     flex-direction: row;
     align-items: center;
     padding: 8px 8px 12px;
-    gap: 9px;
     background: #f6f6fa;
     border-radius: 8px;
     width: 100%;
@@ -625,6 +624,7 @@ main {
     height: 96px;
     border-radius: 8px;
     margin-right: 16px;
+    cursor: pointer;
 }
 
 .size-for-mobile{
@@ -644,6 +644,7 @@ main {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    cursor: pointer;
 }
 
 .product_color-line {
@@ -729,6 +730,7 @@ main {
     font-size: 20px;
     line-height: 24px;
     cursor: pointer;
+    z-index: 2;
 
 }
 
@@ -742,6 +744,7 @@ main {
     font-size: 20px;
     line-height: 24px;
     cursor: pointer;
+    z-index: 2;
 }
 
 .product__counter-wrapper-number {
@@ -946,6 +949,7 @@ svg {
 }
 
 
+
 .main__left__white-wrapper__free-cancel {
     display: flex;
     align-items: center;
@@ -957,7 +961,7 @@ svg {
     margin-top: 16px;
 }
 
-#pay-after-deliver-text {
+.pay-after-deliver-text {
     font-size: 13px;
     line-height: 16px;
     color: #A0A0A4;
@@ -1052,6 +1056,14 @@ footer {
     font-size: 12px;
     line-height: 14px;
     bottom: -18px;
+}
+
+.expand_button{
+    cursor: pointer;
+}
+
+.color-black {
+    color: #000000;
 }
 
 
