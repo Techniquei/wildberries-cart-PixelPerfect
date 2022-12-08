@@ -89,12 +89,20 @@ function reloadProductInCart() {
     }
   })
 
-  document.querySelector(
-    "[data-total_sum]"
-  ).innerText = `${numberFormatterToString(total_sum)} сом`
+  let old_total_sum = parceIntFromInnerText("[data-total_sum]")
+
+  let element_total_sum = document.querySelector("[data-total_sum]")
+
+  increaseNumberAnimationStep(old_total_sum, element_total_sum, total_sum)
+
+  let old_old_sum = parceIntFromInnerText("[data-old_sum]")
+  let element_old_sum = document.querySelector("[data-old_sum]")
+  increaseNumberAnimationStep(old_old_sum, element_old_sum, total_old_sum)
+
   document.querySelector(
     "[data-old_sum]"
   ).innerText = `${numberFormatterToString(total_old_sum)} сом`
+
   document.querySelector(
     "[data_total_discount]"
   ).innerText = `-${numberFormatterToString(total_discount)} сом`
@@ -112,7 +120,9 @@ function reloadProductInCart() {
     document.querySelector(".products-in-card-wrapper.missed").children.length
   } товара`
 
-  document.querySelector('[data-count-in-total]').innerText = `${total_checked} товар(а)`
+  document.querySelector(
+    "[data-count-in-total]"
+  ).innerText = `${total_checked} товар(а)`
 }
 
 function productQuantityIncreace(id) {
@@ -435,3 +445,30 @@ recipient_inn.addEventListener("keydown", () => {
     setTimeout(checkINN, 10)
   }
 })
+
+function increaseNumberAnimationStep(i, element, endNumber) {
+  console.log("foo ", i, endNumber)
+  if (endNumber - i >= 0) {
+    let sub_num = (endNumber - i) / 5
+    if (i < endNumber) {
+      i = Math.ceil(i + sub_num)
+      element.innerText = numberFormatterToString(i) + " сом"
+      setTimeout(function () {
+        increaseNumberAnimationStep(i, element, endNumber)
+      }, 10)
+    }
+  } else {
+    let sub_num = (i - endNumber) / 5
+    if (i > endNumber) {
+      i = Math.floor(i - sub_num)
+      element.innerText = numberFormatterToString(i) + " сом"
+      setTimeout(function () {
+        increaseNumberAnimationStep(i, element, endNumber)
+      }, 10)
+    }
+  }
+}
+
+function parceIntFromInnerText(tag) {
+  return parseInt(document.querySelector(tag).innerText.match(/\d+/))
+}
