@@ -70,7 +70,7 @@ function reloadProductInCart() {
       total_sum += price * quantity
       total_old_sum += price_old * quantity
       total_discount += (price_old - price) * quantity
-      total_checked++
+      total_checked = total_checked + Number(quantity)
     }
 
     if (quantity == 1) {
@@ -101,11 +101,11 @@ function reloadProductInCart() {
 
   document.querySelector(
     "[data-old_sum]"
-  ).innerText = `${numberFormatterToString(total_old_sum)} сом`
+  ).innerText = `${numberFormatterToStringThin(total_old_sum)} сом`
 
   document.querySelector(
     "[data_total_discount]"
-  ).innerText = `-${numberFormatterToString(total_discount)} сом`
+  ).innerText = `−${numberFormatterToStringThin(total_discount)} сом`
 
   document.querySelector(
     "#cart__in-stock-checkbox-wrapper p"
@@ -122,7 +122,7 @@ function reloadProductInCart() {
 
   document.querySelector(
     "[data-count-in-total]"
-  ).innerText = `${total_checked} товар(а)`
+  ).innerText = `${total_checked} товара`
 }
 
 function productQuantityIncreace(id) {
@@ -249,9 +249,17 @@ function numberFormatterToString(number) {
   return String(number)
     .split("")
     .reverse()
-    .map((el, index) => (index % 3 !== 2 ? el : ` ${el}`))
+    .map((el, index) => (index % 3 !== 2 ? el : " "+el))
     .reverse()
     .join("")
+}
+function numberFormatterToStringThin(number) {
+  return String(number)
+    .split("")
+    .reverse()
+    .map((el, index) => (index % 3 !== 2 ? el : " "+el))
+    .reverse()
+    .join("").substring(1)
 }
 
 // Inputs
@@ -452,7 +460,7 @@ function increaseNumberAnimationStep(i, element, endNumber) {
     let sub_num = (endNumber - i) / 5
     if (i < endNumber) {
       i = Math.ceil(i + sub_num)
-      element.innerText = numberFormatterToString(i) + " сом"
+      element.innerText = numberFormatterToString(i)
       setTimeout(function () {
         increaseNumberAnimationStep(i, element, endNumber)
       }, 10)
@@ -461,7 +469,7 @@ function increaseNumberAnimationStep(i, element, endNumber) {
     let sub_num = (i - endNumber) / 5
     if (i > endNumber) {
       i = Math.floor(i - sub_num)
-      element.innerText = numberFormatterToString(i) + " сом"
+      element.innerText = numberFormatterToString(i)
       setTimeout(function () {
         increaseNumberAnimationStep(i, element, endNumber)
       }, 10)

@@ -46,7 +46,7 @@ p {
 
 .header__container {
   width: 100%;
-  max-width: 1352px;
+  max-width: 1360px;
   padding: 0 0;
   display: flex;
   justify-content: space-between;
@@ -60,8 +60,8 @@ p {
   flex-direction: row;
   align-items: center;
   padding: 0px;
-  gap: 16px;
-
+  gap: 17px;
+  margin-left: 4px;
   width: 170px;
   height: 56px;
 }
@@ -81,6 +81,7 @@ p {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  margin-bottom: 2px;
 }
 
 .mobile-menu-icon-frame {
@@ -91,6 +92,7 @@ p {
 .header__catalog {
   width: 28px;
   height: 24px;
+  margin-bottom: 3px;
 
   color: #ffffff;
 }
@@ -120,6 +122,7 @@ p {
 .header__search {
   position: relative;
   width: 100%;
+  margin-bottom:2px;
 }
 
 .header__search-input {
@@ -139,15 +142,17 @@ p {
 .header__search-input::-webkit-input-placeholder {
   color: #ffffff;
   opacity: 0.5;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
+  font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
 }
 
 .header__search-button {
   position: absolute;
   top: 14px;
-  right: 14px;
+  right: 24px;
 
   background: none;
   border: none;
@@ -164,7 +169,7 @@ p {
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
-  padding: 0px 17px 0px 0px;
+  padding-bottom: 2px;
   gap: 40px;
   width: 169px;
   height: 56px;
@@ -193,8 +198,8 @@ p {
   background: #f55123;
   border-radius: 50%;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 7px;
+  top: -3px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -208,7 +213,15 @@ p {
   font-size: 13px;
   line-height: 16px;
   color: #ffffff;
-  margin-top: 6px;
+  margin-top: 5px;
+}
+
+.cart_logo{
+  margin-right: 6px;
+}
+.profile_logo{
+  margin-left: 3px;
+  margin-top: 2px;
 }
 
 main {
@@ -219,7 +232,7 @@ main {
   /* min-height: 1860px; */
   height: 100%;
   width: 100%;
-  margin-top: -24px;
+  margin-top: -23px;
   margin-bottom: -25px;
   z-index: 5;
 }
@@ -227,7 +240,7 @@ main {
 .main-container {
   width: 100%;
   max-width: 1400px;
-  padding: 22px 24px;
+  padding: 22px 13px 0 35px;
 }
 
 .main-container__inner {
@@ -246,12 +259,15 @@ main {
 }
 
 .main__right {
-  width: 31.36%;
+  width: 100%;
+  max-width: 429px;
   height: 1809px;
 }
 
 .total__card {
   width: 100%;
+  max-width: 429px;
+  height: 572px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -297,6 +313,11 @@ main {
   line-height: 32px;
   letter-spacing: -0.01em;
   margin-bottom: 8px;
+}
+
+.total__card-content-item-row:first-child .com{
+  font-size: 20px;
+  line-height: 28px;
 }
 
 #delivery {
@@ -527,7 +548,7 @@ main {
   font-size: 28px;
   line-height: 36px;
   letter-spacing: -0.01em;
-  margin-top: 10px;
+  margin-top: 13px;
   margin-bottom: 24.5px;
 }
 
@@ -543,7 +564,7 @@ main {
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-  gap: 17px;
+  gap: 12px;
 
   width: 100%;
 }

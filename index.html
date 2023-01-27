@@ -35,11 +35,11 @@
             </div>
             <div class="header__menu">
                 <div class="header__menu-item">
-                    <img class="test" src="./img/profile.svg" alt="">
+                    <img class="profile_logo" src="./img/profile.svg" alt="">
                     <div class="header__menu-title">Профиль</div>
                 </div>
                 <div class="header__menu-item header__menu-item-active">
-                    <img src="./img/cart.svg" alt="">
+                    <img src="./img/cart.svg" alt="" class="cart_logo">
                     <div class="header__menu-title">Корзина</div>
                 </div>
             </div>
@@ -56,7 +56,7 @@
                                 <p class="display-none">Выбрано · 3 товара</p>
                                 <div data-wrap>
                                     <input class="custom-checkbox custom-checkbox-product select-all" type="checkbox"
-                                        id="cart__in-stock-checkbox" name="cart__in-stock-checkbox">
+                                        id="cart__in-stock-checkbox" name="cart__in-stock-checkbox" checked>
                                     <label id="for_cart__in-stock-checkbox" for="cart__in-stock-checkbox">Выбрать
                                         все</label>
                                 </div>
@@ -64,7 +64,7 @@
                             </div>
                             <div class="products-in-card-wrapper available-list">
                                 <div id="product_1" class="product-in-card-wrapper" data-product-number="1"
-                                    product-price="494" product-price-old="1051">
+                                    product-price="522" product-price-old="1051">
                                     <div class="product-in-card-wrapper-left">
                                         <div class="product-in-card-wrapper-left-left">
                                             <div class="checkbox-wrapper">
@@ -132,7 +132,7 @@
                                         <div class="product-in-card-wrapper-left-left">
                                             <div class="checkbox-wrapper">
                                                 <input class="custom-checkbox custom-checkbox-product" type="checkbox"
-                                                    id="product-stock-2-checkbox" name="product-stock-2-checkbox">
+                                                    id="product-stock-2-checkbox" name="product-stock-2-checkbox" checked>
                                                 <label for="product-stock-2-checkbox"></label>
                                             </div>
                                             <div class="for-product-image">
@@ -185,12 +185,12 @@
                                     </div>
                                 </div>
                                 <div id="product_3" class="product-in-card-wrapper" data-product-number="3"
-                                    product-price="522" product-price-old="950">
+                                    product-price="247" product-price-old="475">
                                     <div class="product-in-card-wrapper-left">
                                         <div class="product-in-card-wrapper-left-left">
                                             <div class="checkbox-wrapper">
                                                 <input class="custom-checkbox custom-checkbox-product" type="checkbox"
-                                                    id="product-stock-3-checkbox" name="product-stock-3-checkbox">
+                                                    id="product-stock-3-checkbox" name="product-stock-3-checkbox" checked>
                                                 <label for="product-stock-3-checkbox"></label>
                                             </div>
                                             <div class="for-product-image">
@@ -224,7 +224,7 @@
                                                     <div>+</div>
                                                 </div>
                                                 <div class="product__counter-wrapper-number">
-                                                    1
+                                                    2
                                                 </div>
                                             </div>
                                             <p>Осталось 2 шт.</p>
@@ -483,11 +483,12 @@
                             <div class="total__card-content-item">
                                 <div class="total__card-content-item-row">
                                     <div>Итого</div>
-                                    <div data-total_sum>2 101 063 сом</div>
+                                    <div><span data-total_sum>2 101 063</span><span class="com"> сом</span></div>
                                 </div>
                                 <div class="total__card-content-item-row">
                                     <div data-count-in-total>4 товара</div>
-                                    <div data-old_sum>2 302 048 сом</div>
+                                    <div><span data-old_sum>2 302 048</span><span class="com"> сом</span></div>
+
                                 </div>
                                 <div class="total__card-content-item-row">
                                     <div>Скидка</div>
