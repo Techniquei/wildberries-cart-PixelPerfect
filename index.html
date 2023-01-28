@@ -373,7 +373,7 @@
                             <div class="grid_left">Стоимость доставки</div>
                             <div class="grid_right">Бесплатно</div>
                             <div class="grid_left">5—6 февраля</div>
-                            <div class="grid_right small-images-flex">
+                            <div class="grid_right small-images-flex  qwerty1">
                                 <div class="small-photo" small-photo-id="1">
                                     <img src="./img/product_1.png" alt="">
                                     <div class="small-photo_counter display-none">
@@ -393,7 +393,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid_left">7—8 февраля</div>
+                            <div class="grid_left 7_8_fev">7—8 февраля</div>
                             <div class="grid_right small-images-flex">
                                 <div class="small-photo" small-photo-id="2">
                                     <img src="./img/product_2.png" alt="">
@@ -422,9 +422,9 @@
                             <h2>Способ оплаты</h2>
                             <a>Изменить</a>
                         </div>
-                        <div id="bank-card">
+                        <div class="bank-card bigger">
                             <img src="./img/MIR.svg" alt="">
-                            <span>1234 12•• •••• 1234</span>
+                            <span>1234 56•• •••• 1234</span>
                             <span>01/30</span>
                         </div>
 
@@ -439,7 +439,6 @@
 
                         </div>
                         <form class="recipient-form">
-
                             <div class="recipient-form-input-wrapper" id="recipient_name-wrapper">
                                 <label class="display-none" for="recipient_name">Имя</label>
                                 <input type="text" id="recipient_name" class="recipient-form-input" placeholder="Имя">
@@ -451,19 +450,19 @@
                                     placeholder="Фамилия">
                                 <p></p>
                             </div>
-                            <div class="recipient-form-input-wrapper">
+                            <div id="recipient_mail-wrapper" class="recipient-form-input-wrapper">
                                 <label class="display-none" for="recipient_mail">Почта</label>
                                 <input type="email" id="recipient_mail" class="recipient-form-input"
                                     placeholder="Почта">
                                 <p></p>
                             </div>
-                            <div class="recipient-form-input-wrapper">
+                            <div id="recipient_phone-wrapper" class="recipient-form-input-wrapper">
                                 <label class="display-none" for="recipient_phone">Телефон</label>
                                 <input type="tel" id="recipient_phone" class="recipient-form-input"
                                     placeholder="Телефон" value="" maxlength="30">
                                 <p></p>
                             </div>
-                            <div class="recipient-form-input-wrapper" id="recipient-form-input-wrapper-inn">
+                            <div id="recipient_inn-wrapper" class="recipient-form-input-wrapper" id="recipient-form-input-wrapper-inn">
                                 <label class="display-none" for="recipient_inn">ИНН</label>
                                 <input type="text" id="recipient_inn" class="recipient-form-input" placeholder="ИНН"
                                     maxlength="10">
@@ -506,7 +505,7 @@
                                         <h3>Доставка в пункт выдачи</h3>
                                         <img src="./img/pencil.svg" alt="">
                                     </div>
-                                    <p>Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
+                                    <p class="pick-point-adress">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
                                     <p id="pick-point-date">5–8 фев</p>
                                 </div>
                                 <div class="total__card_gray-field">
@@ -528,7 +527,7 @@
                                         <h3>Оплата картой</h3>
                                         <img src="./img/pencil.svg" alt="">
                                     </div>
-                                    <div id="bank-card">
+                                    <div class="bank-card">
                                         <img src="./img/MIR.svg" alt="">
                                         <span>1234 12•• •••• 1234</span>
                                     </div>
@@ -565,10 +564,19 @@
             </div>
 
         </div>
+        
     </main>
     <footer>
         <div class="footer__container">
             <p>© 2022 ООО «Товары и точка»</p>
+        </div>
+        <div class="mobile-footer-menu">
+            <img src="./img/home_button.svg" alt="">
+            <img src="./img/catalog_button.svg" alt="">
+            <div id="mobile-footer-menu__home-wrapper"><img src="./img/cart_button.svg" alt=""><div id="mobile-footer-menu__home-counter">3</div></div>
+            <img src="./img/favorites_button.svg" alt="">
+            <img src="./img/profile_button.svg" alt="">
+
         </div>
     </footer>
     <script src="script.js"></script>

@@ -56,14 +56,14 @@ function reloadProductInCart() {
       max_quantity,
       checked,
     })
-    let total_price_string = numberFormatterToString(total_price)
+    let total_price_string = numberFormatterToStringThin(total_price)
     let cart__new_price = e.querySelector(".cart__new-price")
-    cart__new_price.innerHTML = `${total_price_string} <span>сом</span>`
+    cart__new_price.innerHTML = `${total_price_string}<span> сом</span>`
     total_price_string.length > 4
       ? cart__new_price.classList.add("small")
       : cart__new_price.classList.remove("small")
 
-    let total_price_old_string = numberFormatterToString(total_price_old)
+    let total_price_old_string = window.innerWidth<1024 && total_price_old<10000 ? total_price_old : numberFormatterToStringThin(total_price_old)
     let cart__old_price = e.querySelector(".cart__old-price")
     cart__old_price.innerHTML = `${total_price_old_string} <span>сом</span>`
     if (checked) {
@@ -254,12 +254,13 @@ function numberFormatterToString(number) {
     .join("")
 }
 function numberFormatterToStringThin(number) {
-  return String(number)
-    .split("")
-    .reverse()
-    .map((el, index) => (index % 3 !== 2 ? el : " "+el))
-    .reverse()
-    .join("").substring(1)
+  const a = String(Math.abs(number))
+  .split("")
+  .reverse()
+  .map((el, index) => (index % 3 !== 2 ? el : " "+el))
+  .reverse()
+  .join("")
+  return a
 }
 
 // Inputs
