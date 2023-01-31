@@ -389,6 +389,7 @@ main {
     width: 100%;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15), 0px 0px 1px rgba(0, 0, 0, 0.3);
     pointer-events: none;
+    z-index: 20;
 }
 .hidden-text-price{
     display: flex;
