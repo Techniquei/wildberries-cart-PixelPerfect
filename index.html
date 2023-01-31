@@ -39,7 +39,10 @@
                     <div class="header__menu-title">Профиль</div>
                 </div>
                 <div class="header__menu-item header__menu-item-active">
-                    <img src="./img/cart.svg" alt="" class="cart_logo">
+                    <div class="cart_logo">
+                       <img src="./img/cart.svg" alt="" >
+                       <div id="mobile-footer-menu__home-counter">3</div> 
+                    </div>
                     <div class="header__menu-title">Корзина</div>
                 </div>
             </div>
@@ -60,10 +63,10 @@
                                     <label id="for_cart__in-stock-checkbox" for="cart__in-stock-checkbox">Выбрать
                                         все</label>
                                 </div>
-                                <img class="expand_button" src="./img/arrow_top.svg" alt="">
+                                <img class="expand_button expand_button_1" src="./img/arrow_top.svg" alt="">
                             </div>
                             <div class="products-in-card-wrapper available-list">
-                                <div id="product_1" class="product-in-card-wrapper" data-product-number="1"
+                                <div id="product_1" class="product-in-card-wrapper product-with-checkbox" data-product-number="1"
                                     product-price="522" product-price-old="1051">
                                     <div class="product-in-card-wrapper-left">
                                         <div class="product-in-card-wrapper-left-left">
@@ -88,9 +91,14 @@
                                             </div>
                                             <div class="product_firm">
                                                 <p>Коледино WB</p>
-                                                <div>OOO Вайлдберриз
+                                                <div class="relative-for-manuf">OOO Вайлдберриз
                                                     <div class="product_firm-icon">
                                                         <img src="./img/i.svg" alt="">
+                                                    </div>
+                                                    <div class="manuf-info">
+                                                        <div class="manuf-info-title">OOO «ВАЙЛДБЕРРИЗ»</div>
+                                                        <div class="manuf-info-desc">ОГРН: 5167746237148</div>
+                                                        <div class="manuf-info-desc">129337, Москва, улица Красная Сосна, 2, корпус 1, стр. 1, помещение 2, офис 34</div>
                                                     </div>
                                                 </div>
 
@@ -113,7 +121,7 @@
                                             </div>
                                             <p>Осталось 2 шт.</p>
                                             <div class="product__like-and-delete">
-                                                <img class="like" src="./img/like_active.svg" alt="">
+                                                <div class="like"></div>
                                                 <img class="delete" src="./img/delete.svg" alt="">
                                             </div>
                                         </div>
@@ -121,12 +129,17 @@
                                             <div class="cart__new-price">
                                                 <span>сом</span>
                                             </div>
-                                            <div class="cart__old-price">1051 сом</div>
+                                            <div class="cart__old-price"><span>1051 сом</span>
+                                                <div class="hidden-text hidden-text-price">
+                                                    <div class="row"><div class="grey">Скидка 40%</div><div>−420 сом</div></div>
+                                                    <div class="row"><div class="grey">Скидка покупателя 10%</div><div>−52 сом</div></div>
+                                                </div>
+                                            </div>
                                         </div>
 
                                     </div>
                                 </div>
-                                <div id="product_2" class="product-in-card-wrapper" data-product-number="2"
+                                <div id="product_2" class="product-in-card-wrapper product-with-checkbox" data-product-number="2"
                                     product-price="10500" product-price-old="11500">
                                     <div class="product-in-card-wrapper-left">
                                         <div class="product-in-card-wrapper-left-left">
@@ -148,9 +161,14 @@
                                             </div>
                                             <div class="product_firm">
                                                 <p>Коледино WB</p>
-                                                <div>OOO Мегапрофстиль
+                                                <div class="relative-for-manuf">OOO Мегапрофстиль
                                                     <div class="product_firm-icon">
                                                         <img src="./img/i.svg" alt="">
+                                                    </div>
+                                                    <div class="manuf-info">
+                                                        <div class="manuf-info-title">OOO «МЕГАПРОФСТИЛЬ»</div>
+                                                        <div class="manuf-info-desc">ОГРН: 5167746237148</div>
+                                                        <div class="manuf-info-desc">129337, Москва, улица Красная Сосна, 2, корпус 1, стр. 1, помещение 2, офис 34</div>
                                                     </div>
                                                 </div>
 
@@ -173,18 +191,22 @@
                                             </div>
                                             <p></p>
                                             <div class="product__like-and-delete">
-                                                <img class="like" src="./img/like.svg" alt="">
+                                                <div class="like"></div>
                                                 <img class="delete" src="./img/delete.svg" alt="">
                                             </div>
                                         </div>
                                         <div class="product-in-card-wrapper-right-right">
                                             <div class="cart__new-price small">2 100 047 <span>сом</span></div>
-                                            <div class="cart__old-price">2 300 047 сом</div>
+                                            <div class="cart__old-price"><span>2 300 047 сом</span>
+                                                <div class="hidden-text hidden-text-price">
+                                                    <div class="row"><div class="grey">Скидка 55%</div><div>−300 сом</div></div>
+                                                    <div class="row"><div class="grey">Скидка покупателя 10%</div><div>−30 сом</div></div>
+                                                </div></div>
                                         </div>
 
                                     </div>
                                 </div>
-                                <div id="product_3" class="product-in-card-wrapper" data-product-number="3"
+                                <div id="product_3" class="product-in-card-wrapper product-with-checkbox" data-product-number="3"
                                     product-price="247" product-price-old="475">
                                     <div class="product-in-card-wrapper-left">
                                         <div class="product-in-card-wrapper-left-left">
@@ -204,9 +226,14 @@
 
                                             <div class="product_firm">
                                                 <p>Коледино WB</p>
-                                                <div>OOO Вайлдберриз
+                                                <div class="relative-for-manuf">OOO Вайлдберриз
                                                     <div class="product_firm-icon">
                                                         <img src="./img/i.svg" alt="">
+                                                    </div>
+                                                    <div class="manuf-info">
+                                                        <div class="manuf-info-title">OOO «ВАЙЛДБЕРРИЗ»</div>
+                                                        <div class="manuf-info-desc">ОГРН: 5167746237148</div>
+                                                        <div class="manuf-info-desc">129337, Москва, улица Красная Сосна, 2, корпус 1, стр. 1, помещение 2, офис 34</div>
                                                     </div>
                                                 </div>
 
@@ -229,7 +256,7 @@
                                             </div>
                                             <p>Осталось 2 шт.</p>
                                             <div class="product__like-and-delete deleted">
-                                                <img class="like" src="./img/like.svg" alt="">
+                                                <div class="like"></div>
                                                 <img class="delete" src="./img/delete.svg" alt="">
                                             </div>
                                         </div>
@@ -237,13 +264,17 @@
                                             <div class="cart__new-price">522
                                                 <span>сом</span>
                                             </div>
-                                            <div class="cart__old-price">950 сом</div>
+                                            <div class="cart__old-price"><span>950 сом</span>
+                                                <div class="hidden-text hidden-text-price">
+                                                <div class="row"><div class="grey">Скидка 42%</div><div>−399 сом</div></div>
+                                                <div class="row"><div class="grey">Скидка покупателя 10%</div><div>−95 сом</div></div>
+                                            </div></div>
                                         </div>
 
                                     </div>
                                 </div>
                             </div>
-
+                            <div id="hide-products-line" class="display-none"></div>
                         </div>
                     </div>
 
@@ -279,7 +310,7 @@
 
 
                                             <div class="product__like-and-delete">
-                                                <img class="like" src="./img/like_active.svg" alt="">
+                                                <div class="like"></div>
                                                 <img class="delete" src="./img/delete.svg" alt="">
                                             </div>
                                         </div>
@@ -310,7 +341,7 @@
 
 
                                             <div class="product__like-and-delete">
-                                                <img class="like" src="./img/like.svg" alt="">
+                                                <div class="like"></div>
                                                 <img class="delete" src="./img/delete.svg" alt="">
                                             </div>
                                         </div>
@@ -340,7 +371,7 @@
                                         <div class="product-in-card-wrapper-right-left">
 
                                             <div class="product__like-and-delete">
-                                                <img class="like" src="./img/like.svg" alt="">
+                                                <div class="like"></div>
                                                 <img class="delete" src="./img/delete.svg" alt="">
                                             </div>
                                         </div>
@@ -357,12 +388,12 @@
                     <div class="main__left__white-wrapper">
                         <div class="main__left__white-wrapper-title">
                             <h2>Способ доставки</h2>
-                            <a>Изменить</a>
+                            <a class="modal_button" modal-adress-button>Изменить</a>
                         </div>
                         <div class="delivery-params">
-                            <div class="grid_left">Пункт выдачи</div>
+                            <div left-type-delivery class="grid_left">Пункт выдачи</div>
                             <div class="grid_right">
-                                <div>Бишкек, улица Ахматбека Суюмбаева, 12/1</div>
+                                <div pick-point-adress>Бишкек, улица Ахматбека Суюмбаева, 12/1</div>
                                 <div class="pickpoint-rating">
                                     <img src="./img/star-rating.svg" alt="">
                                     <p id="star-score">4.99</p>
@@ -374,19 +405,19 @@
                             <div class="grid_right">Бесплатно</div>
                             <div class="grid_left">5—6 февраля</div>
                             <div class="grid_right small-images-flex  qwerty1">
-                                <div class="small-photo" small-photo-id="1">
+                                <div class="small-photo" small-photo-id="1" data-small-photo-id="1">
                                     <img src="./img/product_1.png" alt="">
                                     <div class="small-photo_counter display-none">
 
                                     </div>
                                 </div>
-                                <div class="small-photo" small-photo-id="2">
+                                <div class="small-photo" small-photo-id="2" data-small-photo-id="2">
                                     <img src="./img/product_2.png" alt="">
                                     <div class="small-photo_counter">
                                         184
                                     </div>
                                 </div>
-                                <div class="small-photo" small-photo-id="3">
+                                <div class="small-photo" small-photo-id="3" data-small-photo-id="3">
                                     <img src="./img/product_3.png" alt="">
                                     <div class="small-photo_counter">
                                         2
@@ -394,9 +425,21 @@
                                 </div>
                             </div>
                             <div class="grid_left 7_8_fev">7—8 февраля</div>
-                            <div class="grid_right small-images-flex">
-                                <div class="small-photo" small-photo-id="2">
+                            <div class="grid_right small-images-flex" reserve-container>
+                                <div class="small-photo display-none" small-photo-id="1" data-small-photo-id="1" reserv>
+                                    <img src="./img/product_1.png" alt="">
+                                    <div class="small-photo_counter">
+                                        16
+                                    </div>
+                                </div>
+                                <div class="small-photo" small-photo-id="2" data-small-photo-id="2" reserv>
                                     <img src="./img/product_2.png" alt="">
+                                    <div class="small-photo_counter">
+                                        16
+                                    </div>
+                                </div>
+                                <div class="small-photo display-none" small-photo-id="3" data-small-photo-id="3" reserv>
+                                    <img src="./img/product_3.png" alt="">
                                     <div class="small-photo_counter">
                                         16
                                     </div>
@@ -411,7 +454,8 @@
 
                             </div>
                             <div class="total__card_gray-field-text">
-                                Обратная доставка товаров на склад при отказе — <span>бесплатно</span>
+                                Обратная доставка товаров на склад при отказе — <span>бесплатно<div class="hidden-text">Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно</div></span>
+                                
                             </div>
                         </div>
 
@@ -420,10 +464,10 @@
                     <div class="main__left__white-wrapper">
                         <div class="main__left__white-wrapper-title">
                             <h2>Способ оплаты</h2>
-                            <a>Изменить</a>
+                            <a class="modal_button" modal-payment-button>Изменить</a>
                         </div>
                         <div class="bank-card bigger">
-                            <img src="./img/MIR.svg" alt="">
+                            <img class="payment_img" src="./img/MIR.svg" alt="">
                             <span>1234 56•• •••• 1234</span>
                             <span>01/30</span>
                         </div>
@@ -502,11 +546,11 @@
                             <div id="delivery" class="total__card-content-item">
                                 <div class="pick-point">
                                     <div class="pick-point-change">
-                                        <h3>Доставка в пункт выдачи</h3>
-                                        <img src="./img/pencil.svg" alt="">
+                                        <h3 right-type-delivery>Доставка в пункт выдачи</h3>
+                                        <img class="modal_button" modal-adress-button src="./img/pencil.svg" alt="">
                                     </div>
-                                    <p class="pick-point-adress">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
-                                    <p id="pick-point-date">5–8 фев</p>
+                                    <p class="pick-point-adress" pick-point-adress>Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
+                                    <span id="pick-point-date">5–8 фев</span>
                                 </div>
                                 <div class="total__card_gray-field">
                                     <div class="delivery-icon-accept">
@@ -516,7 +560,9 @@
                                     </div>
                                     <div class="total__card_gray-field-text">
                                         Обратная доставка товаров на склад при отказе — <span>бесплатно</span>
+                                         <div class="hidden-text">Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно</div>
                                     </div>
+                                   
 
                                 </div>
                             </div>
@@ -525,17 +571,17 @@
                                 <div class="pick-point">
                                     <div class="pick-point-change">
                                         <h3>Оплата картой</h3>
-                                        <img src="./img/pencil.svg" alt="">
+                                        <img class="modal_button" modal-payment-button src="./img/pencil.svg" alt="">
                                     </div>
                                     <div class="bank-card">
-                                        <img src="./img/MIR.svg" alt="">
+                                        <img class="payment_img" src="./img/MIR.svg" alt="">
                                         <span>1234 12•• •••• 1234</span>
                                     </div>
                                 </div>
                                 <div id="pay-gray-field" class="total__card_gray-field">
 
                                     <div class="checkbox-wrapper">
-                                        <input class="custom-checkbox" type="checkbox" id="pay-now" name="pay-now">
+                                        <input class="custom-checkbox" type="checkbox" id="pay-now" name="pay-now" pay-now="false">
                                         <label for="pay-now">Списать оплату сразу</label>
                                     </div>
                                     <p class=" pay-after-deliver-text color-black">Спишем оплату с карты при получении
@@ -546,7 +592,7 @@
 
                                 </div>
                             </div>
-                            <button class="order-button">Заказать</button>
+                            <button id="order-button" class="order-button">Заказать</button>
 
 
                         </div>
@@ -579,6 +625,113 @@
 
         </div>
     </footer>
+    
+    <div id="modal-payment" class="modal display-none">
+        <div class="modal_content">
+            <div class="modal_content_inner">
+                <img class="btn-close" src="./img/close.svg" alt="">
+                <button class="order-button" change-payment-button>Выбрать</button>
+                <div class="modal_title">Способ оплаты</div>
+                <form id="modal_inner_list_payment" class="modal_inner_list">
+                    <div class="modal_inner_list_item">
+                       <label class="container">
+                        <div><img src="./img/MIR.svg" alt="" srcset="">1234 56•• •••• 1234</div>
+                        <input type="radio" checked="checked" name="name"  value="MIR">
+                        <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="modal_inner_list_item">
+                        <label class="container">
+                         <div><img src="./img/VISA.svg" alt="" srcset="">1234 56•• •••• 1234</div>
+                         <input type="radio" name="name" value="VISA">
+                         <span class="checkmark"></span>
+                         </label>
+                    </div>
+                    <div class="modal_inner_list_item">
+                        <label class="container">
+                         <div><img src="./img/MASTERCARD.svg" alt="" srcset="">1234 56•• •••• 1234</div>
+                         <input type="radio" name="name"  value="MASTERCARD">
+                         <span class="checkmark"></span>
+                         </label>
+                    </div>
+                    <div class="modal_inner_list_item">
+                        <label class="container">
+                         <div><img src="./img/MASTERCARDB.svg" alt="" srcset="">1234 56•• •••• 1234</div>
+                         <input type="radio" name="name"  value="MASTERCARDB">
+                         <span class="checkmark"></span>
+                         </label>
+                    </div>
+            </form>
+            
+        </div>
+    </div>
+</div>
+    <div id="modal-adress" class="modal display-none">
+        <div class="modal_content">
+            <div class="modal_content_inner">
+                <img class="btn-close" src="./img/close.svg" alt="">
+                <button class="order-button" change-delivery-button>Выбрать</button>
+                <div class="modal_title">Способ доставки</div>
+                <div id="adress-method-select">
+                    <div id="button-pickpoint" class="type-of-delivery" delivery-type="pickpoint">В пункт выдачи</div>
+                    <div id="button-courier" class="type-of-delivery selected" delivery-type="courier">Курьером</div>
+                </div>
+                <div class="my-adresses">Мои адреса</div>
+                <form id="modal_inner_list_courier" class="modal_inner_list">
+                    <div class="modal_inner_list_item">
+                       <label class="container">
+                        <div>Бишкек, улица Табышалиева, 57</div>
+                        <input type="radio" checked="checked" name="name"  value="Бишкек, улица Табышалиева, 57">
+                        <span class="checkmark"></span>
+                        </label>
+                        <img class="delete" src="./img/delete.svg" alt="">
+                    </div>
+                    <div class="modal_inner_list_item">
+                        <label class="container">
+                         <div>Бишкек, улица Жукеева-Пудовкина, 77/1</div>
+                         <input type="radio" name="name" value="Бишкек, улица Жукеева-Пудовкина, 77/1">
+                         <span class="checkmark"></span>
+                         </label>
+                         <img class="delete" src="./img/delete.svg" alt="">
+                    </div>
+                    <div class="modal_inner_list_item">
+                        <label class="container">
+                         <div>Бишкек, микрорайон Джал, улица Ахунбаева Исы, 67/1</div>
+                         <input type="radio" name="name"  value="Бишкек, микрорайон Джал, улица Ахунбаева Исы, 67/1">
+                         <span class="checkmark"></span>
+                         </label>
+                         <img class="delete" src="./img/delete.svg" alt="">
+                    </div>
+                </form>
+                <form id="modal_inner_list_pickpoint" class="modal_inner_list display-none">
+                <div class="modal_inner_list_item">
+                   <label class="container">
+                    <div class="inner_list_string">г. Бишкек, микрорайон Джал, улица Ахунбаева Исы, д. 67/1<div class="with-star"><img  src="./img/star-rating.svg" alt=""><span class="black">4.99</span>Пункт выдачи</div></div>
+                    <input type="radio" checked="checked" name="name"  value="г. Бишкек, микрорайон Джал, улица Ахунбаева Исы, д. 67/1">
+                    <span class="checkmark"></span>
+                    </label>
+                    <img class="delete" src="./img/delete.svg" alt="">
+                </div>
+                <div class="modal_inner_list_item">
+                    <label class="container">
+                     <div class="inner_list_string">г. Бишкек, микрорайон Джал, улица Ахунбаева Исы, д. 67/1<div class="with-star"><img  src="./img/star-rating.svg" alt=""><span class="black">4.99</span>Пункт выдачи</div></div>
+                     <input type="radio" name="name" value="г. Бишкек, микрорайон Джал, улица Ахунбаева Исы, д. 67/1">
+                     <span class="checkmark"></span>
+                     </label>
+                     <img class="delete" src="./img/delete.svg" alt="">
+                </div>
+                <div class="modal_inner_list_item">
+                    <label class="container">
+                     <div class="inner_list_string">г. Бишкек, улица Табышалиева, д. 57<div class="with-star"><img  src="./img/star-rating.svg" alt=""><span class="black">4.99</span>Пункт выдачи</div></div>
+                     <input type="radio" name="name"  value="г. Бишкек, улица Табышалиева, д. 57">
+                     <span class="checkmark"></span>
+                     </label>
+                     <img class="delete" src="./img/delete.svg" alt="">
+                </div>
+                </form>
+        </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 
