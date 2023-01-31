@@ -187,11 +187,7 @@ document.addEventListener("click", (e) => {
   if (target.classList.contains("like")) {
     getProductsFromChild(target).forEach((e) => {
       let like = e.querySelector(".like")
-      if (like.getAttribute("src") == "./img/like_active.svg") {
-        like.setAttribute("src", "./img/like.svg")
-      } else {
-        like.setAttribute("src", "./img/like_active.svg")
-      }
+      like.classList.toggle('liked')
     })
   }
 

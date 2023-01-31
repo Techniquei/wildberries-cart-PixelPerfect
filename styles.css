@@ -918,12 +918,18 @@ main {
   margin-bottom: 10px;
 }
 
+.product-in-card-wrapper:hover .product__like-and-delete{
+  opacity: 1;
+}
+
 .product__like-and-delete {
   display: flex;
   gap: 18.5px;
   justify-content: end;
   margin-top: 1.5px;
   height: 16px;
+  opacity: 0;
+  transition: all .1s;
 }
 
 
@@ -933,6 +939,15 @@ main {
 
 .delete{
   margin-right: 1.5px;
+  width: 16px;
+  height: 16px;
+  background: url(./img/delete.svg);
+  cursor: pointer;
+  z-index: 2;
+}
+
+.delete:hover{
+  background: url(./img/delete_active.svg);
 }
 
 .cart__new-price {
@@ -1396,13 +1411,23 @@ footer {
 
 .modal_inner_list_item img{
   cursor: pointer;
-  margin-top: 6px;
+  margin-top: 2px;
 }
 
 .modal_inner_list_item div{
   display: flex;
   align-items: center;
   margin-left: -7px;
+}
+
+.modal_inner_list_item div.delete{
+  margin-top: 4px;
+  background: url(./img/delete-grey.svg);
+  z-index: 10;
+}
+
+.modal_inner_list_item div.delete:hover{
+  background: url(./img/delete_active.svg);
 }
 
 #modal-adress .modal_content_inner{
@@ -1474,9 +1499,14 @@ footer {
   left: 0;
   height: 16px;
   width: 16px;
-  background-color: #eee;
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
+
+#modal-payment .modal_inner_list .checkmark{
+  top: 7px;
+} 
 
 .modal_inner_list .container:hover input ~ .checkmark {
   background-color: #ccc;
@@ -1484,6 +1514,7 @@ footer {
 
 .modal_inner_list .container input:checked ~ .checkmark {
   background-color: #CB11AB;
+  border: 1px solid #CB11AB;
 }
 
 .modal_inner_list .checkmark:after {
@@ -1497,8 +1528,8 @@ footer {
 }
 
 .modal_inner_list .container .checkmark:after {
-  margin-top: 5px;
-  margin-left: 5px;
+  margin-top: 4px;
+  margin-left: 4px;
 	width: 6px;
 	height: 6px;
 	border-radius: 50%;
@@ -1540,7 +1571,7 @@ footer {
 }
 
 .liked{
-  background: url(./img/like.svg);
+  background: url(./img/like_active.svg);
 }
 
 .like:hover{
